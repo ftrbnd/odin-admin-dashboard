@@ -12,6 +12,62 @@ body {
 .header {
     grid-row: 1;
     grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 12px;
+
+    padding: 12px;
+    padding-top: 0;
+}
+
+.top {
+    grid-row: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;    
+}
+
+#search {
+    flex-grow: 1;
+    height: min-content;
+    padding: 4px;
+}
+
+.bottom {
+    grid-row: 2;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.greeting {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+.greeting > img {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+.greeting > p {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.greeting > h2 {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
 }
 
 .sidebar {
