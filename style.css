@@ -82,11 +82,6 @@ body {
     padding: 12px;
 }
 
-.content {
-    grid-row: 2 / -1;
-    grid-column: 2 / -1;
-}
-
 .page-logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -97,4 +92,71 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 24px;
+}
+
+.content {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+}
+
+.cards {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: 1fr 1fr;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    padding: 8px;
+    height: 200px;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+}
+
+.announcements {
+    grid-row: 1 / 2;
+    grid-column: 2 / -1;
+
+    gap: 4px;
+}
+
+.announcement-content {
+    display: grid;
+    grid-row: repeat(3, 1fr);
+    gap: 12px;
+
+    padding: 16px;
+}
+
+.trends {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+}
+
+.trending-items {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+
+    padding: 16px;
+}
+
+.trending {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
