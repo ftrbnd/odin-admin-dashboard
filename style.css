@@ -37,14 +37,15 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
 .search {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 4px;
-    flex: 2;
+    flex: 1;
 }
 
 #search {
@@ -65,12 +66,16 @@ body {
 
     display: flex;
     justify-content: space-between;
+    gap: 8px;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
 .greeting {
     display: grid;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: auto 1fr; 
+    gap: 4px;
 }
 
 img {
