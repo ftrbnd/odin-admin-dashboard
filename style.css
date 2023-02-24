@@ -3,7 +3,7 @@
 :root {
     --primary-color: #0ea5e9;
     --secondary-color: #eab308;
-    --background-gray: #eeeeee;
+    --background-gray: #e2e8f0;
 }
 
 html, body {
@@ -162,14 +162,23 @@ ul {
     display: flex;
     flex-direction: column;
     gap: 4px;
+    justify-content: space-between;
 
-    padding: 8px;
+    padding: 16px;
     height: 200px;
 
     border-left: 8px solid var(--secondary-color);
     border-radius: 5px;
     background-color: white;
     box-shadow: 1px 1px 2px 1px #e1e1e1
+}
+
+.text > h4 {
+    margin-bottom: 0;
+}
+
+.text > p {
+    margin-top: 4px;
 }
 
 .icons {
@@ -205,7 +214,7 @@ ul {
     padding: 8px;
 }
 
-.announcement-card > h5 {
+.announcement-card > h4 {
     margin: 0;
 }
 
