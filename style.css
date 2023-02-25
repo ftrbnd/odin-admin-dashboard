@@ -28,7 +28,6 @@ body {
     gap: 12px;
 
     padding: 12px;
-    padding-top: 0px;
 }
 
 .top {
@@ -58,7 +57,12 @@ body {
 
 .menu {
     display: flex;
+    align-items: center;
     gap: 24px;
+}
+
+.top svg {
+    height: 3rem;
 }
 
 .bottom {
@@ -78,6 +82,10 @@ body {
     gap: 4px;
 }
 
+svg {
+    height: 4rem;
+}
+
 img {
     width: 25px;
     height: auto;
@@ -93,7 +101,7 @@ img {
     height: auto;
 }
 
-.greeting > img {
+.greeting > svg {
     grid-row: 1 / -1;
     grid-column: 1 / 2;
 
@@ -146,12 +154,26 @@ button {
     background-color: var(--primary-color);
 }
 
+.sidebar svg {
+    fill: white;
+}
+
+.main div, .extra div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    height: 2rem;
+}
+
+.main svg, .extra svg {
+    height: 2rem;
+}
+
 .page-logo {
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     gap: 4px;
-
-    height: min-content;
 }
 
 ul {
@@ -220,6 +242,10 @@ ul {
     display: flex;
     justify-content: flex-end;
     gap: 16px;
+}
+
+.icons > svg {
+    height: 2rem;
 }
 
 .announcements-cell {
