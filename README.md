@@ -37,7 +37,6 @@
 
 * ![HTML][HTML]
 * ![CSS][CSS]
-* ![JavaScript][JavaScript]
 
 
 
